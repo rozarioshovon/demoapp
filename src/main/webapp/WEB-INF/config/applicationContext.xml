@@ -16,5 +16,12 @@
 		<beans:property name="prefix" value="/WEB-INF/views/" />
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
+	
+	<beans:bean name="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<beans:property name="driverClass" value="com.mysql.jdbc.Driver" />
+		<beans:property name="jdbcUrl" value="jdbc:mysql://localhost:3306/demoapp" />
+		<beans:property name="user" value="root" />
+		<beans:property name="password" value="" />
+	</beans:bean>
 
 </beans:beans>
